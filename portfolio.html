@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="icon" type="image/x-icon" href="./images/online_information_marketing_social_contact_connection_internet_icon_230462.ico" />
+    <script src="https://kit.fontawesome.com/43d7666498.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PremSai</title>
+</head>
+<body>
+    <div class="navigation">
+        <h1>Prem Sai</h1>
+        <div>
+        <ul class="nav-bar" id="nav">
+            <li><a class="link" href='#home'>home</a></li>
+            <li><a class="link" href='#about'>about</a></li>
+            <li><a class="link" href='#projects'>projects</a></li>
+            <li><a class="link" href='#certification'>skills</a></li>
+            <li><a class="link" href='#contact'>contact</a></li>
+        </ul>
+    </div>
+        <button onclick="myFunction()" class="icon"><i class="fa fa-bars"></i></button>
+    </div>
+    <main>
+        <section id="home">
+            <section class="home1">
+            <div class="wish">Hello, there</div>
+            <p>
+                Myself, Jammu Prem Sai
+            </p>
+            <div class="typer">
+                <p><span id="type"></span></p>
+            </div>
+            <div class="social">
+                <p><a href="https://www.github.com/Jpremsai" target="_blank"><i class="fa-brands fa-github"></i></a></p>
+                <p><a href="https://www.linkedin.com/in/jpremsai" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></p>
+                <p><a href="https://www.freecodecamp.org/fcc680c2a6f-db57-4b78-bbfc-0d79985108e9" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a></p>
+                <div>
+                    <button><a href="./Files/Profile (1).pdf" download>Resume</a></button>
+                </div>
+            </section>
+            <section>
+            <figure>
+                <img src="./images/20200605024244_IMG_6117.JPG" alt="">
+            </figure>
+            </section>
+        </section>
+        <div class="rule">
+        <i id="rule" class="far fa-horizontal-rule"></i>
+        </div>
+        <section>
+        <div id="about">
+            <div class="about">
+                My name is jammu prem sai. I am from Hyderabad. I am a graduate in civil engineering. But my interest in developing is in peaks from past one year. so, then I decided to bring my skills into the web developing amd gained proficient knowledge in Frontend web developing. I proud to say that, I am a self learner.
+                Coming to my strengths, smart working and researching is in my nature. I think it is one of my best assets. I would like to work with right skills and experienced working clients. currently, I am a job seeker.
+            </div>
+        </div>
+        </section>
+        <div class="rule">
+            <i id="rule" class="far fa-horizontal-rule"></i>
+            </div>
+        <section id="projects">
+            <div class="list">
+                <div class="item">
+                <div>Build a project for movie reviews website which is inspires from moviedatabase.</div>
+                <button><a href="https://www.github.com/Jpremsai">Read</a></button>
+                </div>
+                <div class="item">
+                <div>Build a fcc projects for frontend library certification.</div>
+                <button><a href="https://www.github.com/Jpremsai">Read</a></button>
+                </div>
+                <div class="item">
+                <div>Build a small project which is rock,paper & scissors.</div>
+                <button><a href="https://github.com/Jpremsai/rock-paper-and-scissor">Read</a></button>
+                </div>
+            </div>
+        </section>
+        <div class="rule">
+            <i id="rule" class="far fa-horizontal-rule"></i>
+            </div>
+        <section id="skills">
+            <div class="skills">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>React</div>
+            <div>Redux</div>
+            <div>API Interface</div>
+            <p>Note: You can see my certifications in my freeCodeCamp page. please, <a href="https://www.freecodecamp.org/fcc680c2a6f-db57-4b78-bbfc-0d79985108e9" target="_blank">take a tour</a>.</p>
+            </div>
+        </section>
+        <div class="rule">
+            <i id="rule" class="far fa-horizontal-rule"></i>
+            </div>
+    </main>
+    <footer id="contact">
+        <div>
+            Contact Me :
+            <form action="https://formsubmit.co/el/hexika" method="POST">
+                <input type="text" name="Name" placeholder="Full Name" required />
+                <input type="email" name="Email" placeholder="Email" required />
+                <textarea name="Message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
+    <script src="./portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#type', {
+  strings:['Frontend Developer', 'React.js', 'HTML', 'CSS', "JavaScript Lover"],
+  typeSpeed: 50,
+  backSpeed: 100,
+  loop: true
+})
+
+function myFunction() {
+    var x = document.getElementById('nav');
+    var y = document.getElementsByClassName('icon')[0]
+    console.log(x)
+    if (x.className === "nav-bar") {
+      x.className +=' responsive'
+      y.innerHTML = '<i class="far fa-times-square"></i>'
+    } else {
+      x.className = "nav-bar";
+      y.innerHTML = '<i class="fa fa-bars"></i>'
+    }
+}
+    </script>
+</body>
+</html>
