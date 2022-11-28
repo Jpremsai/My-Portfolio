@@ -31,7 +31,7 @@
                 Myself, Jammu Prem Sai
             </p>
             <div class="typer">
-                <p><span id="type"></span></p>
+                <p><span id="type" data-wait = '2000' data-words='["Frontend Developer", "React.js", "HTML & CSS", "JavaScript"]' ></span></p>
             </div>
             <div class="social">
                 <p><a href="https://www.github.com/Jpremsai" target="_blank"><i class="fa-brands fa-github"></i></a></p>
@@ -106,28 +106,6 @@
             </form>
         </div>
     </footer>
-    <script src="./portfolio.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed('#type', {
-  strings:['Frontend Developer', 'React.js', 'HTML', 'CSS', "JavaScript Lover"],
-  typeSpeed: 50,
-  backSpeed: 100,
-  loop: true
-})
-
-function myFunction() {
-    var x = document.getElementById('nav');
-    var y = document.getElementsByClassName('icon')[0]
-    console.log(x)
-    if (x.className === "nav-bar") {
-      x.className +=' responsive'
-      y.innerHTML = '<i class="far fa-times-square"></i>'
-    } else {
-      x.className = "nav-bar";
-      y.innerHTML = '<i class="fa fa-bars"></i>'
-    }
-}
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -127,8 +127,8 @@ img{
     font-family: monospace;
     padding: 10px;
 }
-.typed-cursor{
- font-size: 2rem;
+.txt{
+ border-right: 2px solid white;
 }
 .social{
     text-align: center;
